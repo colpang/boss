@@ -132,6 +132,7 @@ GameObject:
   - component: {fileID: 278346607}
   - component: {fileID: 278346609}
   - component: {fileID: 278346608}
+  - component: {fileID: 278346610}
   m_Layer: 0
   m_Name: Lager
   m_TagString: Untagged
@@ -165,7 +166,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32dc79c5fb7698045b90a66a582c1c7d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  check: 1
 --- !u!212 &278346609
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -216,6 +216,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &278346610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 278346606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4975da5a1ebb0249980104894d418f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timer: 2
+  waitingTime: 0
+  SLRng: {fileID: 0}
 --- !u!1 &326666397
 GameObject:
   m_ObjectHideFlags: 0
@@ -515,7 +530,6 @@ GameObject:
   - component: {fileID: 1096767550}
   - component: {fileID: 1096767549}
   - component: {fileID: 1096767548}
-  - component: {fileID: 1096767551}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -588,20 +602,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1096767551
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1096767547}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ef1a04bb9d4d2b4b88f2934832e0607, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ShakeAmount: 1
-  ShakeTime: 0.05
 --- !u!1 &1271631126
 GameObject:
   m_ObjectHideFlags: 0
@@ -712,7 +712,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32dc79c5fb7698045b90a66a582c1c7d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  check: 1
 --- !u!212 &1796334817
 SpriteRenderer:
   m_ObjectHideFlags: 0
