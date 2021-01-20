@@ -166,6 +166,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32dc79c5fb7698045b90a66a582c1c7d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cool: 1
 --- !u!212 &278346609
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -228,9 +229,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4975da5a1ebb0249980104894d418f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timer: 2
-  waitingTime: 0
-  SLRng: {fileID: 0}
+  timer: 0
+  waitingTime: 2
 --- !u!1 &326666397
 GameObject:
   m_ObjectHideFlags: 0
@@ -679,6 +679,7 @@ GameObject:
   - component: {fileID: 1796334815}
   - component: {fileID: 1796334817}
   - component: {fileID: 1796334816}
+  - component: {fileID: 1796334818}
   m_Layer: 0
   m_Name: Lager
   m_TagString: Untagged
@@ -712,6 +713,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32dc79c5fb7698045b90a66a582c1c7d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cool: 1
 --- !u!212 &1796334817
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -762,6 +764,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1796334818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1796334814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4975da5a1ebb0249980104894d418f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timer: 0
+  waitingTime: 0
 --- !u!1 &2067155616
 GameObject:
   m_ObjectHideFlags: 0
