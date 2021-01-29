@@ -62,10 +62,12 @@ public class LaserRotation : MonoBehaviour
         check = false;
         while (cool > 0.0f)
         {
+            GameObject.Find("Main Camera").GetComponent<CameraShake>().Shake();
             cool -= Time.deltaTime;
             yield return null;
         }
         check = true;
+        GameObject.Find("Main Camera").GetComponent<CameraShake>().cameraReset();
 
     }
 }
